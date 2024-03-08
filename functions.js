@@ -18,8 +18,8 @@ function cubeHeight2volume(height){
 }
 
 function gymMembershipCost(cost, friends){
-    let total = cost / (1 + (friends * 0.05));
-    if(friends >= 3) total = cost / 1.15;
+    let total = cost * (1 - (friends * 0.05));
+    if(friends >= 3) total = cost * 0.85;
 
     return(total);
 }
