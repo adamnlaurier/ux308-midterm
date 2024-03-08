@@ -13,7 +13,7 @@ function fahrenheit2Celsius(fahrenheit){
 }
 
 function cubeHeight2volume(height){
-    const volume = height ^ 3;
+    const volume = height ** 3;
     return(volume);
 }
 
@@ -35,7 +35,7 @@ function earthquakeDamage(intensity){
     }else if (intensity >= 5){
         result = "Some damage";
     }
-    
+
     return result;
 }
 
