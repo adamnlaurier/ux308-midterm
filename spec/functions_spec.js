@@ -30,7 +30,7 @@ describe("tests for fahrenheit to celsius", function(){
     });
     it("tests room temperature conversion", function(){
         const temp = fahrenheit2Celsius(70);
-        expect(temp).toBeCloseTo(21.1);
+        expect(temp).toBeCloseTo(21.11111111111111);
     });
 
 });
@@ -52,20 +52,20 @@ describe("tests for cube height to volume", function(){
 
 describe("tests for gym membership cost", function(){
     it("tests 1 friend", function(){
-        const cost = gymMembershipCost(12, 1);
-        expect(cost).toBeCloseTo(11.4);
+        const cost = gymMembershipCost(10, 1);
+        expect(cost).toEqual(9.5);
     });
     it("tests 2 friends", function(){
-        const cost = gymMembershipCost(12, 2);
-        expect(cost).toBeCloseTo(10.8);
+        const cost = gymMembershipCost(10, 2);
+        expect(cost).toEqual(9);
     });
     it("tests 3 friends", function(){
-        const cost = gymMembershipCost(12, 3);
-        expect(cost).toBeCloseTo(10.2);
+        const cost = gymMembershipCost(10, 3);
+        expect(cost).toEqual(8.5);
     });
     it("tests 4 friends", function(){
-        const cost = gymMembershipCost(12, 4);
-        expect(cost).toBeCloseTo(10.2);
+        const cost = gymMembershipCost(10, 4);
+        expect(cost).toEqual(8.5);
     });
 });
 
